@@ -48,3 +48,7 @@ corepack enable 是什么？
     await sentTxRespose.wait(1);
     console.log('sentTxRespose::', sentTxRespose)
 ```
+
+### 编译产物：.abi .bin
+
+.bin是合约的binary形式，.abi是.bin的一个‘缩影’
