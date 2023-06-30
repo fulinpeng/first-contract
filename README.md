@@ -14,8 +14,6 @@ solcjs 编译sol，`yarn solcjs --bin --abi --include-path node_modules/ --base-
 
 地址：https://docs.ethers.io
 
-corepack enable 是什么？
-
 ### 运行
 
 1. 启动ganache
@@ -52,3 +50,10 @@ corepack enable 是什么？
 ### 编译产物：.abi .bin
 
 .bin是合约的binary形式，.abi是.bin的一个‘缩影’
+
+### NOTE
+
+1. js不能识别bigNumber，可以用引号包裹：`'1000000000000000000000'`
+2. 报错：`could not coalesce error (error={ "code": -32000, "message": "the tx doesn't have the correct nonce. account has nonce of: 4 tx has
+nonce of: 3", `，之后换了一个Wallet私钥即可
+
