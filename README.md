@@ -51,6 +51,10 @@ solcjs 编译sol，`yarn solcjs --bin --abi --include-path node_modules/ --base-
 
 .bin是合约的binary形式，.abi是.bin的一个‘缩影’
 
+### 测试网 sepolia
+* sepolia 测试币领取： https://sepoliafaucet.com/
+* RPC_URL在这里找：[Sepolia RPC URL List](https://chainlist.org/chain/11155111)
+
 ### NOTE
 
 1. js不能识别bigNumber，可以用引号包裹：`'1000000000000000000000'`

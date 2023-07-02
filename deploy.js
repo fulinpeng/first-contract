@@ -23,6 +23,7 @@ async function main() {
     const contractFactory=new ethers.ContractFactory(abi, binary, wallet)
     console.log('Deploying, please wait...')
     const contract=await contractFactory.deploy();
+    console.log('contract adress::', await contract.getAddress())
 
     // get number
     const currentFavoriteNumber=await contract.retrieve();
